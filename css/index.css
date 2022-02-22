@@ -1,0 +1,32 @@
+@import "common.css";
+
+#projects_container {
+  background-color: #5afb91;
+  padding: 1em;
+}
+
+#project_list {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.project {
+  background-color: antiquewhite;
+  border-radius: 0.5em;
+  width: 30vw;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.project > img {
+  width: 80%;
+  align-self: center;
+}
+
+.project > h2 {
+  font-size: 1em;
+  white-space: pre-line;
+}

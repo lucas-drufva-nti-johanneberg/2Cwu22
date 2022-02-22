@@ -20,6 +20,7 @@ header {
   justify-content: space-between;
   padding: 0.5em 1em;
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -122,37 +123,6 @@ footer {
   width: 50%;
 }
 
-#projects_container {
-  background-color: #5afb91;
-  padding: 1em;
-}
-
-#project_list {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.project {
-  background-color: antiquewhite;
-  border-radius: 0.5em;
-  width: 30vw;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0.5em;
-  margin: 0.5em;
-}
-
-.project > img {
-  width: 80%;
-  align-self: center;
-}
-
-.project > h2 {
-  font-size: 1em;
-  white-space: pre-line;
-}
-
 #experience_container {
   padding: 1em;
 }
@@ -207,4 +177,8 @@ footer {
   margin: 3px 10%;
   display: inline-block;
   content: "";
+}
+
+.title {
+  font-size: 3em;
 }

@@ -1,0 +1,38 @@
+@import 'common.css';
+
+main {
+    margin: 1em;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 3fr 2fr 5fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+                "img about about"
+                "tech tech stats";
+    height: 100%;
+    gap: 2em;
+}
+
+main > img {
+    grid-area: img;
+    max-height: 75%;
+    max-width: 100%;
+}
+
+#about {
+    grid-area: about;
+    color: white;
+}
+
+#tech {
+    grid-area: tech;
+}
+
+#stats {
+    grid-area: stats;
+}
+
+.box {
+    border-radius: 1em;
+    background-color: antiquewhite;
+}

@@ -30,3 +30,30 @@
   font-size: 1em;
   white-space: pre-line;
 }
+
+
+#experience_container {
+  padding: 1em;
+}
+
+/* Timeline inspiration: https://codepen.io/alanhouser/pen/aErrQJ */
+
+.timeline {
+  border-left: 4px solid green;
+  margin-left: 5em;
+  padding: 0.5em;
+}
+
+.event {
+  position: relative;
+}
+
+.event::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -5em;
+
+  content: attr(data-time);
+  width: 4.5em;
+}

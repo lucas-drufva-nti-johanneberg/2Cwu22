@@ -1,0 +1,51 @@
+@import 'common.css';
+
+#projects_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 90vh;
+}
+
+.project {
+    margin: 1em;
+}
+
+.project-link {
+    display: block;
+    position: relative;
+}
+
+.project-link > img {
+    max-width: 100%;
+    transition: all 0.1s ease;
+    /* max-height: 100%; */
+}
+
+.project-title {
+    margin: 0;
+    color: antiquewhite;
+    white-space: nowrap;
+    letter-spacing: -1px;
+    font-weight: 400;
+    word-break: break-word;
+    font-size: 1.7em;
+}
+
+.proDESC {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: aliceblue;
+}
+
+.project-link:hover > .proDESC {
+    display: block;
+}
+
+.project-link:hover > img {
+    filter: brightness(50%);
+    transform: scale(1.05);
+}

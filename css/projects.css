@@ -9,6 +9,7 @@
 
 .project {
     margin: 1em;
+    border-bottom: 2px solid antiquewhite;
 }
 
 .project-link {
@@ -24,6 +25,7 @@
 
 .project-title {
     margin: 0;
+    text-align: center;
     color: antiquewhite;
     white-space: nowrap;
     letter-spacing: -1px;
@@ -48,4 +50,11 @@
 .project-link:hover > img {
     filter: brightness(50%);
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 788px) {
+    #projects_container{
+        margin: 1em;
+        grid-template-columns: 100%;
+    }
 }

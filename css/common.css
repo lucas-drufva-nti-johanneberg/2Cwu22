@@ -118,11 +118,6 @@ footer {
   text-decoration-line: underline;
 }
 
-#profile_img {
-  border-radius: 50%;
-  width: 50%;
-}
-
 
 #contact_container {
   background-color: brown;
@@ -156,4 +151,23 @@ footer {
 
 .title {
   font-size: 3em;
+}
+
+.menu-item{
+  display: none;
+  color: white;
+}
+
+@media screen and (min-width: 700px){
+  #menu_icon {
+    display: none;
+  }
+
+  .menu-item{
+    display: block;
+  }
+
+  .menu-item:last-child{
+    margin-right: 5em;
+  }
 }

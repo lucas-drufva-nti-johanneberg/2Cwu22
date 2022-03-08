@@ -1,5 +1,15 @@
 @import "common.css";
 
+section .title {
+  text-align: center;
+  color: white;
+}
+
+#profile_img {
+  border-radius: 50%;
+  width: 50%;
+}
+
 #projects_container {
   background-color: #5afb91;
   padding: 1em;
@@ -34,6 +44,7 @@
 
 #experience_container {
   padding: 1em;
+
 }
 
 /* Timeline inspiration: https://codepen.io/alanhouser/pen/aErrQJ */
@@ -56,4 +67,24 @@
 
   content: attr(data-time);
   width: 4.5em;
+}
+
+@media screen and (min-width: 992px){
+  #profile_img{
+    width: 20%;
+  }
+
+  #projects_container {
+    padding: 5em;
+  }
+
+  #experience_container {
+    margin: 0, 15em;
+    
+  }
+
+  .timeline{
+    margin-left: 40%;
+  }
+  
 }

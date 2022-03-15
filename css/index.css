@@ -2,7 +2,11 @@
 
 section .title {
   text-align: center;
-  color: white;
+  color: var(--text-secondary);
+}
+
+section > .title.primary {
+  color: var(--text-primary);
 }
 
 #profile_img {
@@ -11,8 +15,8 @@ section .title {
 }
 
 #projects_container {
-  background-color: #5afb91;
-  padding: 1em;
+  background-color: var(--bg-secondary);
+  padding: 0em 1em 1em 1em;
 }
 
 #project_list {
@@ -67,6 +71,54 @@ section .title {
 
   content: attr(data-time);
   width: 4.5em;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 70px;
+}
+
+.arrows path {
+	stroke: var(--bg-secondary);
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
 @media screen and (min-width: 992px){

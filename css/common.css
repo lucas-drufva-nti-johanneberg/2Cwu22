@@ -1,6 +1,14 @@
+:root {
+  --bg-primary: #393f5f;
+  --bg-secondary: #6a7e6a;
+  --bg-tertiary: #e96d53;
+  --text-primary: #ff9760;
+  --text-secondary: #ffe69d;
+}
+
 body {
   margin: 0;
-  background-color: #222222;
+  background-color: var(--bg-primary);
 }
 
 ul,
@@ -14,7 +22,7 @@ li {
 }
 
 header {
-  background-color: #222222;
+  background-color: var(--bg-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,10 +59,11 @@ nav > a {
   transform: scale(1.15) translateY(-30px);
   opacity: 0;
   border-bottom: 1px solid rgb(187, 187, 187);
-  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99),
+    opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
-nav.open > a{
+nav.open > a {
   /* display: block; */
   transform: scale(1) translateY(0px);
   opacity: 1;
@@ -75,12 +84,12 @@ nav a:nth-child(4) {
 }
 
 main {
-  background-color: #222222;
+  background-color: var(--bg-primary);
   margin: 0;
 }
 
 footer {
-  background-color: brown;
+  background-color: var(--bg-secondary);
 }
 
 #logo {
@@ -109,7 +118,7 @@ footer {
   line-height: 42px;
   text-align: center;
 
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 #welcome_name {
@@ -118,9 +127,8 @@ footer {
   text-decoration-line: underline;
 }
 
-
 #contact_container {
-  background-color: brown;
+  background-color: var(--bg-secondary);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -143,31 +151,49 @@ footer {
 .hline::after {
   width: 80%;
   height: 0;
-  border: 1px solid white;
   margin: 3px 10%;
   display: inline-block;
   content: "";
+}
+
+.primary.hline::before,
+.primary.hline::after {
+  border: 1px solid var(--text-primary);
+}
+
+.secondary.hline::before,
+.secondary.hline::after {
+  border: 1px solid var(--text-secondary);
 }
 
 .title {
   font-size: 3em;
 }
 
-.menu-item{
+.menu-item {
   display: none;
   color: white;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
   #menu_icon {
     display: none;
   }
 
-  .menu-item{
+  .menu-item {
     display: block;
   }
 
-  .menu-item:last-child{
+  .menu-item:last-child {
     margin-right: 5em;
   }
+}
+
+.wave-divider {
+  transform: translate(0px, 3em);
+  margin: 0;
+}
+
+.wave-divider-bottom {
+  transform: translate(0px, -5em);
 }

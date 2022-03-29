@@ -1,5 +1,9 @@
 @import 'common.css';
 
+main{
+    padding: 10vh;
+}
+
 #projects_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,7 +13,7 @@
 
 .project {
     margin: 1em;
-    border-bottom: 2px solid antiquewhite;
+    border-bottom: 2px solid var(--text-primary);
 }
 
 .project-link {
@@ -26,7 +30,7 @@
 .project-title {
     margin: 0;
     text-align: center;
-    color: antiquewhite;
+    color: var(--text-primary);
     white-space: nowrap;
     letter-spacing: -1px;
     font-weight: 400;
@@ -40,7 +44,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    color: aliceblue;
+    color: white;
 }
 
 .project-link:hover > .proDESC {
@@ -54,7 +58,15 @@
 
 @media screen and (max-width: 788px) {
     #projects_container{
-        margin: 1em;
+        margin: 0em;
         grid-template-columns: 100%;
+    }
+
+    .project{
+        margin: 1em 0em;
+    }
+
+    main{
+        padding: 5em 2em;
     }
 }

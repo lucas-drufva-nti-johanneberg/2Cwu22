@@ -6,31 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucas Drufva</title>
-  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/index.min.css" />
 </head>
 
 <body>
   <header>
-    <img id="logo" src="img/placeholder-logo.png" alt="logo" />
+    <div id="logo" src="" alt="logo"><!-- Put future logo here --></div>
     <img id="menu_icon" src="img/icons8-menu.svg" alt="menu" />
     <a href="index.html" class="menu-item active">Home</a>
     <a href="projects.html" class="menu-item">Projects</a>
     <a href="experience.html" class="menu-item">Experience</a>
     <a href="about.html" class="menu-item">About</a>
-    <a href="contact.html" class="menu-item">Contact</a>
   </header>
   <nav>
     <a href="index.html" class="">Home</a>
     <a href="projects.html" class="">Projects</a>
     <a href="experience.html" class="">Experience</a>
     <a href="about.html" class="">About</a>
-    <a href="contact.html" class="">Contact</a>
   </nav>
 
   <main id="fullpage">
     <section class="section">
       <div id="welcome_container">
-        <img id="profile_img" src="img/blank-profile-picture.png" alt="profile" />
+        <img id="profile_img" src="img/profile_test2.png" alt="profile" />
         <p id="welcome_message">
           Hi, my name is <span id="welcome_name">Lucas Drufva</span>
         </p>
@@ -47,7 +45,7 @@
     </section>
 
     <svg class="wave-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#6a7e6a" fill-opacity="1"
+      <path fill="#91C7AA" fill-opacity="1"
         d="M0,160L40,149.3C80,139,160,117,240,122.7C320,128,400,160,480,186.7C560,213,640,235,720,224C800,213,880,171,960,144C1040,117,1120,107,1200,117.3C1280,128,1360,160,1400,176L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
       </path>
     </svg>
@@ -56,33 +54,30 @@
       <h1 class="title">Projects</h1>
       <div class="hline secondary">
         <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <li class="project">
+          <ul class="swiper-wrapper">
+              <li class="project swiper-slide">
                 <img src="img/InfiniteNewtonCradle.jpg" alt="Project" />
                 <h2>Infinite Newton's Cradle</h2>
               </li>
-            </div>
-            <div class="swiper-slide">
-              <li class="project">
-                <img src="img/duel.png" alt="Project" />
+              <li class="project swiper-slide">
+                <img src="img/duel.jpg" alt="Project" />
                 <h2>DUEL</h2>
               </li>
-            </div>
-            <div class="swiper-slide">
-              <li class="project">
+              <li class="project swiper-slide">
                 <img src="img/InfiniteNewtonCradle.jpg" alt="Project" />
                 <h2>Infinite Newton's Cradle</h2>
               </li>
-            </div>
-          </div>
+            </ul>
           <div class="swiper-pagination"></div>
         </div>
       </div>
+      <a class="view_more" href="projects.html">
+        View more
+      </a>
     </section>
 
     <svg class="wave-divider-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#6a7e6a" fill-opacity="1"
+      <path fill="#91C7AA" fill-opacity="1"
         d="M0,192L40,176C80,160,160,128,240,128C320,128,400,160,480,176C560,192,640,192,720,176C800,160,880,128,960,149.3C1040,171,1120,245,1200,250.7C1280,256,1360,192,1400,160L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
       </path>
     </svg>
@@ -101,10 +96,13 @@
           </li>
         </ul>
       </div>
+      <a class="view_more primary" href="experience.html">
+        View more
+      </a>
     </section>
 
     <svg class="footer_divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#6a7e6a" fill-opacity="1"
+      <path fill="#91C7AA" fill-opacity="1"
         d="M0,192L120,176C240,160,480,128,720,128C960,128,1200,160,1320,176L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
       </path>
     </svg>
@@ -115,7 +113,8 @@
       </a>
       <div id="social_links_container">
         <a href="https://github.com/lucasdrufva"><img src="img/icons8-github.svg" alt="github" /></a>
-        <a href="https://www.linkedin.com/in/lucas-drufva-122874218/"><img src="img/icons8-linkedin.svg" alt="linkedin" /></a>
+        <a href="https://www.linkedin.com/in/lucas-drufva-122874218/"><img src="img/icons8-linkedin.svg"
+            alt="linkedin" /></a>
       </div>
       <p class="text-center">
         Icons by <a href="https://icons8.com/">icons8</a>
@@ -135,6 +134,7 @@
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 

@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/about.css">
+    <title>Lucas Drufva - About</title>
+    <link rel="stylesheet" href="css/about.min.css">
 </head>
+
 <body>
     <header>
-        <img id="logo" src="img/placeholder-logo.png" alt="logo" />
+        <div id="logo" src="" alt="logo"><!-- Put future logo here --></div>
         <img id="menu_icon" src="img/icons8-menu.svg" alt="menu" />
         <a href="index.html" class="menu-item">Home</a>
         <a href="projects.html" class="menu-item">Projects</a>
         <a href="experience.html" class="menu-item">Experience</a>
-        <a href="about.html" class="menu-item">About</a>
-        <a href="contact.html" class="menu-item">Contact</a>
-      </header>
-      <nav>
-        <a href="">Projects</a>
-        <a href="">Resume</a>
-        <a href="about.html">About</a>
-        <a href="">Contact</a>
-      </nav>
-      <main>
-          <img src="img/fullbody-temp.webp">
-          <article id="about">
-              <h1 class="title">About me</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit ligula non neque congue, vitae iaculis est aliquam. Integer facilisis erat at porttitor hendrerit. Pellentesque ultricies, augue id porta interdum, purus tortor efficitur tortor, ullamcorper tincidunt ligula ipsum a leo. Sed a scelerisque ligula. Cras luctus, mi a laoreet tincidunt, nisi metus pharetra libero, ut tincidunt ex risus id ante. Nulla tempor dignissim cursus. In et nisi eros. Proin fringilla turpis a blandit gravida. Duis purus nisl, semper non laoreet vitae, hendrerit quis nibh. Proin mattis erat non tristique varius. Maecenas vitae leo odio. Proin fringilla lobortis est, et feugiat dui efficitur ac. Aenean porta nunc eget egestas luctus.</p>
-          </article>
-          <article class="box" id="tech">
-              <h2>Tech</h2>
-          </article>
-          <article class="box" id="stats">
-              <h2>Github stats</h2>
-          </article>
-      </main>
-      <script src="js/menu.js"></script>
+        <a href="about.html" class="menu-item active">About</a>
+    </header>
+    <nav>
+        <a href="index.html" class="">Home</a>
+        <a href="projects.html" class="">Projects</a>
+        <a href="experience.html" class="">Experience</a>
+        <a href="about.html" class="">About</a>
+    </nav>
+
+    <main>
+        <article id="me">
+            <img src="img/fullbody-temp.webp">
+        </article>
+
+        <article id="about">
+            <h1 class="title primary">About me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit ligula non neque congue, vitae
+                iaculis est aliquam. Integer facilisis erat at porttitor hendrerit. Pellentesque ultricies, augue id
+                porta interdum, purus tortor efficitur tortor, ullamcorper tincidunt ligula ipsum a leo. Sed a
+                scelerisque ligula. Cras luctus, mi a laoreet tincidunt, nisi metus pharetra libero, ut tincidunt ex
+                risus id ante. Nulla tempor dignissim cursus. In et nisi eros. Proin fringilla turpis a blandit gravida.
+                Duis purus nisl, semper non laoreet vitae, hendrerit quis nibh. Proin mattis erat non tristique varius.
+                Maecenas vitae leo odio. Proin fringilla lobortis est, et feugiat dui efficitur ac. Aenean porta nunc
+                eget egestas luctus.</p>
+        </article>
+        <img id="tech"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=lucasdrufva&hide=javascript,Makefile,GDScript,HTML&theme=vue-dark">
+        <img id="stats"
+            src="https://github-readme-stats.vercel.app/api?username=lucasdrufva&count_private=true&show_icons=true&theme=vue-dark" />
+    </main>
+    <script src="js/menu.js"></script>
 </body>
+
 </html>

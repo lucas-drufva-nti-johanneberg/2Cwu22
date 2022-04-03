@@ -1,16 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;1,700&family=Gafata&family=Rubik&display=swap");
 
 :root {
-  --bg-primary: #393f5f;
+  /* Old color theme */
+  /* --bg-primary: #393f5f;
   --bg-secondary: #6a7e6a;
   --bg-tertiary: #e96d53;
   --text-primary: #ff9760;
-  --text-secondary: #ffe69d;
+  --text-secondary: #ffe69d; */
+  --bg-primary: #273849;
+  --bg-secondary: #91C7AA;
+  --bg-tertiary: #ab5747;
+  --text-primary: #6CF1B6;
+  --text-secondary: #1D361A;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   margin: 0;
   background-color: var(--bg-primary);
+  font-family: 'Rubik', sans-serif;
 }
 
 ul,
@@ -24,7 +35,6 @@ li {
 }
 
 header {
-  /* background-color: var(--bg-primary); */
   backdrop-filter: blur(2px) brightness(90%);
   -webkit-backdrop-filter: blur(2px) brightness(90%);
   display: flex;
@@ -50,7 +60,6 @@ header > a {
 
 nav {
   position: absolute;
-  /* background-color: brown; */
   backdrop-filter: blur(3px) brightness(60%);
   -webkit-backdrop-filter: blur(2px) brightness(60%);
   top: 9.5vh;
@@ -70,7 +79,6 @@ nav.open {
 }
 
 nav > a {
-  /* display: none; */
   color: #ffffff;
   text-decoration: none;
   font-size: 2em;
@@ -82,7 +90,6 @@ nav > a {
 }
 
 nav.open > a {
-  /* display: block; */
   transform: scale(1) translateY(0px);
   opacity: 1;
   transition-delay: 0s;
@@ -112,7 +119,7 @@ main {
 #logo {
   height: 7vh;
   margin-right: auto;
-  margin-left: 10vw;
+  margin-left: 0vw;
 }
 
 #menu_icon {
@@ -144,6 +151,8 @@ main {
 
 .title {
   font-size: 3em;
+  font-family: 'Exo', sans-serif;
+  font-weight: bold;
   text-align: center;
   color: var(--text-secondary);
 }
@@ -175,6 +184,7 @@ main {
   text-align: right;
   position: absolute;
   display: block;
+  color: var(--text-primary);
   top: 0em;
   left: 0em;
 
@@ -224,5 +234,9 @@ main {
   .event {
     width: 28em;
   }
+
+#logo {
+  margin-left: 5vw;
+}
 
 }

@@ -13,7 +13,7 @@
 
 #welcome_name {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-style: bold;
+  font-weight: bold;
   line-height: 51px;
   text-decoration-line: underline;
 }
@@ -218,7 +218,7 @@
     );
   }
   #experience_container {
-    margin: 0, 15em;
+    margin: 0 15em;
   }
   .timeline {
     margin-left: 34%;
